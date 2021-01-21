@@ -93,7 +93,12 @@ int main(int argc, _TCHAR* argv[])
     //wchar_t wStr[] = L"C:\\Users\\swxxx\\source\\repos\\Project1\\Debug\\Project1.dll";
     //wchar_t wStr[] = L"C:\\Users\\swxxx\\source\\repos\\demo\\Debug\\demo.dll";
     //wchar_t wStr[] = L"C:\\Users\\swxxx\\source\\repos\\SendFileDemo\\Debug\\SendFileDemo.dll";
-    wchar_t wStr[] = L"wechathelper.dll";
+    #ifdef _DEBUG
+    wchar_t wStr[] = L"C:\\Users\\swxxx\\source\\repos\\3.1.0.41\\Debug\\wechathelper.dll";
+    #else
+    wchar_t wStr[] = L"C:\\vplus\\wechathelper.dll";
+    #endif
+
 
     DWORD dwId = 0;
 
